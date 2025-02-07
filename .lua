@@ -49,6 +49,10 @@ setclipboard(identifyexecutor())
 
 shutdown()
 
+--// [SAVEINSTANCE]
+
+saveinstance()
+
 --// [CLONEREF]
 
 cloneref(game:GetService('Workspace')) --// Example Service
