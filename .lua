@@ -31,7 +31,7 @@ gethwid()
 print(gethwid())
 setclipboard(gethwid())
 
---// [ETC]
+--[[// [ETC]
 
 makefolder('Example')
 isfolder('Example')
@@ -39,15 +39,15 @@ isfile('Example')
 writefile('Example/file', 'context.')
 readfile('Example/file')
 delfolder('Example')
+appendfile('Example', 'context.')
+listfiles('Example')
+
+]]
 
 --// [EXECUTOR]
 
 print(identifyexecutor())
 setclipboard(identifyexecutor()) 
-
---// [SHUTDOWN]
-
-shutdown()
 
 --// [SAVEINSTANCE]
 
@@ -56,3 +56,12 @@ saveinstance()
 --// [CLONEREF]
 
 cloneref(game:GetService('Workspace')) --// Example Service
+
+--// [QOT]
+
+queue_on_teleport([[print('Text')]])
+print('this script will run after teleporting')
+
+--// [MESSAGEBOX]
+
+messagebox('context', 'title', 1) --// [Value]
